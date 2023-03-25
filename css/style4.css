@@ -1,0 +1,342 @@
+/* -------------DEFAULT-CSS--------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-secondary) !important;
+}
+
+:root {
+    --color-default: #fff;
+    --color-primary: #ce1212;
+    --color-secondary: #37373f;
+    --black-color: black;
+    --Inter-fonts: 'Inter';
+    --Amatic-fonts: 'Amatic SC';
+    --open-sans: 'Open Sans';
+}
+a{
+    width: max-content;
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/* -------------------header-------------------- */
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-default);
+}
+
+.logo h1 span {
+    color: var(--color-primary);
+}
+
+nav {
+    background-color: var(--color-secondary);
+}
+
+nav ul li {
+    padding: 10px !important;
+}
+
+nav ul li a {
+    color: var(--color-default) !important;
+    position: relative;
+}
+
+.text-decoration::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--color-primary);
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.text-decoration:hover::after {
+    width: 100%;
+
+}
+
+.sub {
+    color: var(--black-color) !important;
+}
+
+.sub::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--color-primary);
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.sub:hover:after {
+    width: 100%;
+    color: #4f4f5a;
+}
+
+/* ------------------banner-------------------------------- */
+
+.banner {
+    background-color: var(--black-color);
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+.banner_content {
+    margin-top: 60px !important;
+    padding-right: 50px;
+}
+.banner h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-default);
+    /* font-family:var(); */
+    font-family: 'Amatic SC', cursive;
+}
+.banner h2 span {
+    color: var(--color-primary);
+}
+.banner p {
+    color: #93939d;
+    font-weight: 400;
+}
+.btn_book_a_table {
+    font-weight: 500;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+.btn_book_a_table:hover{
+    background: rgba(206, 18, 18, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+    color: #fff ;
+}
+.banner .btn-watch-video span {
+    font-size: 16px;
+    transition: 0.5s;
+    color: var(--color-default);
+    font-weight: 600;
+}
+.banner .btn-watch-video {
+    color: var(--color-primary);
+    font-size: 35px;
+    transition: 0.3s;
+    line-height: 0;
+}
+.banner .btn-watch-video span:hover {
+    color: var(--color-primary);
+}
+.banner .btn-watch-video:hover {
+    color: rgba(206, 18, 18, 0.8);
+}
+
+/* ------------------------modal--------------------------- */
+.modal-content {
+    background-color: #1f1f24 !important;
+}
+
+.modal-header h2 {
+    color: #f7f7f7;
+}
+
+.email-form {
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.modal-header p {
+    color: #f7f7f7;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+.modal-header p span {
+    color: #ce1212;
+}
+.modal_img img {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-position: left;
+}
+.form_edit {
+    /* padding: 10px; */
+    border-radius: 3px;
+    margin: 10px;
+}
+.table1 {
+    padding: 10px;
+}
+/* --------EVENT-HEADING--------- */
+.heading-event h1 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--color-default);
+}
+/* --------EVENT-HEADING--------*/
+.before_img {
+    position: relative;
+}
+
+.event_img {
+    width: 100%;
+    height: 600px;
+    object-position: left;
+    object-fit: cover;
+}
+
+.before_img::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.hed_thr {
+    position: relative;
+}
+
+.hed_thr:before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: var(--color-primary);
+    bottom: -5px;
+    left: 0;
+}
+
+.card-slider {
+    background-color: transparent !important;
+    border-left: 0.5px solid #fff !important;
+    border-radius: none !important;
+}
+
+.padd {
+    --bs-gutter-x: 0rem!important;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    background-color: var(--color-primary) !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.carousel-caption {
+    left: 10% !important;
+    right: 10% !important;
+}
+
+/* -----------------------------------------------footer */
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.footer .footer_links {
+    margin-bottom: 30px;
+}
+
+.footer .footer_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer_links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer_links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer_links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer_links ul a:hover {
+    color: #fff;
+}
+
+.footer .social_links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer .social_links a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer .credits a {
+    color: #fff;
+}

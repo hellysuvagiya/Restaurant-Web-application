@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="js/wow.min.js">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.css">
+    <title>Document</title>
+  </head>
+<body>
+  
+  <!----------------------------- header------------------------- -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">
+            <h1>Yummy<span>.</span></h1>
+          </a>
+         <!--------------- buttontoggle ----------------->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-3">
+                <a class="nav-link text-decoration"  href="yummy.html" >Home</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-decoration" href="">About</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-decoration" href="#">Menu</a>
+              </li><li class="nav-item pe-3">
+                <a class="nav-link text-decoration" href="#">Events</a>
+              </li><li class="nav-item pe-3">
+                <a class="nav-link text-decoration" href="#">Chefs</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-decoration" href="#">Gallery</a>
+              </li>
+              <li class="nav-item dropdown pe-3">
+                <a class="nav-link dropdown-toggle text-decoration1" href="#" role="button" data-bs-toggle="dropdown" >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item sub " href="#">Dropdown</a></li>
+                  <li><a class="dropdown-item sub" href="#">Dropdown1</a></li>
+                  <li><a class="dropdown-item sub" href="#">Dropdown2</a></li>
+                  <li><a class="dropdown-item sub" href="#">Dropdown3</a></li>
+                  <li><a class="dropdown-item sub" href="#">Dropdown4</a></li>
+                  <li><a class="dropdown-item sub" href="#">Dropdown5</a></li> 
+                </ul>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link text-decoration" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <!------------ book a table ----------->
+            <!-- <button class="book">Book a Table</button> -->
+            <a href="#" class="btn_book_a_table ps-4 pe-4 px-2 py-2 wow animate__animated animate__slideInRight" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal">Book a Table</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- ---------------------banner ------------------->
+ 
+   <section class="banner " id="banner1">
+    <div class="container text-start">
+      <div class="row justify-content-around banner_content">
+        <div class="col-lg-6 img_text mt-5 wow animate__animated animate__slideInDown">
+          <h2>ENJOY YOUR HEALTHY<br>DELICIOUS FOOD</h2>
+          <p class="mt-2">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <div class="d-flex">
+            <a href="#" class="btn_book_a_table ps-4 pe-4 px-2 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Book a Table</a>&nbsp; &nbsp;
+            <a href="https://www.youtube.com/watch?v=QcOED9rj7Qw" class="btn-watch-video d-flex align-items-center"> <i class="bi bi-play-circle"></i>&nbsp;<span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-6 img_area image-fluid">
+          <img src="images/hero-img.png" alt="" class="mt-5 wow animate__animated animate__rotateIn">
+        </div>
+      </div> 
+    </div>
+  </section>
+<!-- --------------------------------------modal---------------------------------- -->
+  <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Book A Table</h2>
+          <p>Book <span>Your Stay</span> With Us</p>
+        </div>  
+        <div class="row">
+           <div class="col-lg-4 modal_img"><img src="images/reservation.jpg" alt=""></div>
+            <div class="col-lg-8 d-flex align-items-center">
+              <form class="email-form">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 form-input">
+                    <input type="text" name="name" class="form_edit" id="name" placeholder="Your Name"  required>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-input">
+                    <input type="email" class="form_edit" name="email" id="email" placeholder="Your Email" required>
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-input">
+                    <input type="text" class="form_edit" name="phone" id="phone" placeholder="Your Phone" required>
+                
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-input">
+                    <input type="text" name="date" class="form_edit" id="date" placeholder="Date" required>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-input">
+                    <input type="text" class="form_edit" name="time" id="time" placeholder="Time" required>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-input">
+                    <input type="number" class="form_edit" name="people" id="people" placeholder="Number" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+
+                <div class="text-center p-4"><button type="submit" class="btn_book_a_table table1">Book a Table</button></div>
+              </form>      
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>        
+        </div>
+      </div>
+    </div>    
+  </div>
+  <!-- ---------------------------contact ------------------------------------->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Need Help? <span>Contact Us</span></p>
+      </div>
+
+      <div class="mb-3">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-map flex-shrink-0"></i>
+            <div>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center">
+            <i class="icon bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-share flex-shrink-0"></i>
+            <div>
+              <h3>Opening Hours</h3>
+              <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                <strong>Sunday:</strong> Closed
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </section>
+  <!-- -------------------------footer-------------------------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer_links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer_links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer_links">
+          <h4>Follow Us</h4>
+          <div class="social_links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+      </script>
+</body>
+
+</html>

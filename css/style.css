@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  width: max-content;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --color-default: #fff;
+  --color-primary: #ce1212;
+  --color-secondary: #37373f;
+  --black-color: black;
+  --Inter-fonts: 'Inter';
+  --Amatic-fonts: 'Amatic SC';
+  --open-sans: 'Open Sans';
+}
+
+
+/* -------------------header-------------------- */
+.logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color:var(--color-default);
+}
+
+.logo h1 span {
+  color: var(--color-primary);
+}
+
+nav {
+  background-color: var(--color-secondary);
+}
+
+nav ul li {
+  padding: 10px !important;
+}
+
+nav ul li a {
+  color: var(--color-default) !important;
+  position: relative;
+}
+
+.text-decoration::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--color-primary);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.text-decoration:hover::after {
+  width: 100%;
+
+}
+
+.sub {
+  color: var(--black-color) !important;
+}
+
+.sub::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--color-primary);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.sub:hover:after {
+  width: 100%;
+  color: #4f4f5a;
+}
+
+/* ------------------banner-------------------------------- */
+
+.banner {
+  background-color: var(--black-color);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+}
+
+.banner_content {
+  margin-top: 60px;
+  padding-right: 50px;
+}
+
+/* .img_area{
+
+} */
+
+.banner h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-default);
+  /* font-family:var(); */
+  font-family: 'Amatic SC', cursive;
+}
+
+.banner h2 span {
+  color: var(--color-primary);
+}
+
+.banner p {
+  color: #93939d;
+  font-weight: 400;
+}
+
+.btn_book_a_table {
+  font-weight: 500;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
+.banner .btn-book-a-table:hover {
+  background: rgba(206, 18, 18, 0.8);
+  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+.banner .btn-watch-video span {
+  font-size: 16px;
+  transition: 0.5s;
+  color: var(--color-default);
+  font-weight: 600;
+}
+
+.banner .btn-watch-video {
+  color: var(--color-primary);
+  font-size: 35px;
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.banner .btn-watch-video span:hover {
+  color: var(--color-primary);
+}
+
+.banner .btn-watch-video:hover {
+  color: rgba(206, 18, 18, 0.8);
+}
+
+/* ------------------------modal--------------------------- */
+.modal-content {
+  background-color: #1f1f24 !important;
+
+}
+
+.modal-header h2 {
+  color: #f7f7f7;
+}
+
+.email-form {
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+
+.modal-header p {
+  color: #f7f7f7;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+
+}
+
+.modal-header p span {
+  color: #ce1212;
+}
+
+.modal_img img {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-position: left;
+}
+
+.form_edit {
+  /* padding: 10px; */
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.table1 {
+  padding: 10px;
+}
+
+/* -----------------------------contact ---------------- */
+.section-header h2 {
+  color: #f7f7f7;
+}
+
+.section-header p {
+  color: #f7f7f7;
+}
+
+.contact {
+  background-color: #37373f;
+  padding-bottom: 20px;
+}
+
+.contact .info-item {
+  background-color: #f4f4f4;
+  padding: 30px;
+  height: 100%;
+}
+
+.contact .info-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: #fff;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.contact .info-item .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: rgba(55, 55, 63, 0.7);
+  line-height: 1;
+  margin: 4px 6px 0 0;
+  transition: 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+  color: var(--color-primary);
+}
+
+
+
+/* -----------------------------------------------footer */
+.footer {
+  font-size: 14px;
+  background-color: #1f1f24;
+  padding: 50px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .icon {
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 0;
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.footer .footer_links {
+  margin-bottom: 30px;
+}
+
+.footer .footer_links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer_links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer_links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer_links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer_links ul a:hover {
+  color: #fff;
+}
+
+.footer .social_links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social_links a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .credits {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color: #fff;
+}

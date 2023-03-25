@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-family: 'Inter';
+}
+
+:root {
+    --primary-color: #ce1212;
+    --color-secondary: #37373f;
+    --border-color: #b6b6bf;
+    --black-color: black;
+    --Inter-fonts: 'Inter';
+    --Amatic-fonts: 'Amatic SC';
+    --open-sans: 'Open Sans';
+    --DM-serif-fonts:'DM Serif Display';
+}
+section{
+    background-color: #2f2f2f;
+    padding: 100px;
+}
+/* aa custom margin  78 line ma aapiyu chhe */
+
+
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+h4{
+    color: #fff;
+}
+h1{
+    color:var(--border-color);
+}
+/* menu */
+
+.Starters_menu{
+    margin: 0 auto;
+}
+section nav ul li a{  
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 5px;
+    transition: 0.3s;
+    color:#fff;
+    border-radius: 0;
+    cursor: pointer;
+    border-bottom: 2px solid #b6b6bf;
+}
+section nav ul li a:hover{
+    color: #ce1212;
+}
+
+
+/* SLIDER */
+.carousel-inner {
+    height: 400px !important;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: var(--primary-color) !important;
+}
+.carousel-item:before{
+    position: absolute;
+    content: '';
+    width: 3.5px;
+    height: 180px;
+    background-color: var(--primary-color);
+    top: 50px;
+    left: 0;
+}
+
+/* =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== */
+/* =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== */
+/* =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== */
+/* =============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== */
+
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-          NEW PAGE - PAGE NAME IS MENU              =-=-=-=-=-=-=-=-=-=- */
+img{
+    max-width: 100%;
+}
+.wakeup-eat{
+    margin-top: 75px;
+}
+.wakeup-eat .boxed{
+    position: relative;
+    transition: 0.5s;
+}
+.wakeup-eat .boxed img{
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px !important;
+}
+@keyframes transfrom {
+ 
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+.wakeup-eat {
+    animation: transfrom 2s alternate infinite linear;
+}
+
+
+/*  Scection 2 */
+.custom_space02{
+    margin-top: 100px;
+}
+.choose-menu .card{
+    transition: 1s;
+}
+.choose-menu .card:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px){
+    .wakeup-eat .boxed{
+        margin-top: 75px;
+        padding-top: 75px !important;
+    }
+}
+@media (max-width: 576px){
+    .wakeup-eat .boxed{
+        padding-top: 100px !important;
+    }
+}
+
+/* 
+-----------------------------------------
+----------------------------------------- */
+
+
+
+/* -------------------header-------------------- */
+
+header.logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color:var(--color-default);
+}
+
+header.logo h1 span {
+  color: var(--color-primary);
+}
+
+header nav {
+  background-color: var(--color-secondary);
+}
+
+header nav ul li {
+  padding: 10px !important;
+}
+
+nav ul li a {
+  color: #fff !important;
+  position: relative;
+}
+
+.text-decoration::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color:var(--primary-color);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.text-decoration:hover::after {
+  width: 100%;
+
+}
+.sub {
+  color: var(--black-color) !important;
+}
+.sub::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.5s;
+}
+.sub:hover:after {
+  width: 100%;
+  color: #4f4f5a;
+}
+.btn_book_a_table {
+    font-weight: 500;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #ce1212;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  }
+  
+.btn-book-a-table:hover{
+    background-color: #ce1212;
+    color: #fff;
+  }
+
+
+
+  /* ------------------------modal--------------------------- */
+.modal-content {
+    background-color: #1f1f24 !important;
+  
+  }
+  
+  .modal-header h2 {
+    color: #f7f7f7;
+  }
+  
+  .email-form {
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+  }
+  
+  .modal-header p {
+    color: #f7f7f7;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+  
+  }
+  
+  .modal-header p span {
+    color: #ce1212;
+  }
+  
+  .modal_img img {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-position: left;
+  }
+  
+  .form_edit {
+    /* padding: 10px; */
+    border-radius: 3px;
+    margin: 10px;
+  }
+  
+  .table1 {
+    padding: 10px;
+  }
+  /* -----------------------------------------------footer */
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+  
+  .footer .footer_links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer_links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer_links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer_links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer_links ul a:hover {
+    color: #fff;
+  }
+  
+  .footer .social_links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social_links a:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .footer .credits a {
+    color: #fff;
+  }
